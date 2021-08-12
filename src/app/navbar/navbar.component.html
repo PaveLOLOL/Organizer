@@ -1,0 +1,21 @@
+<mat-toolbar color="primary" class="navbar">
+
+  <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+    <a mat-button [routerLink]="['/']">Покупки</a>
+  </li>
+
+  <div class="spacer"></div>
+
+  <li routerLinkActive="active"><a mat-button [routerLink]="['/finance']">Финансовый отчет</a><li>
+  <li routerLinkActive="active"><a mat-button [routerLink]="['/service']">Сервисы</a></li>
+  <li routerLinkActive="active"><a mat-button [routerLink]="['/about']">О проекте</a></li>
+<!--  todo сделать подсветку текста при выборе -->
+</mat-toolbar>
+
+<div class="container">
+  <div class="card">
+
+    <router-outlet></router-outlet>
+
+  </div>
+</div>
